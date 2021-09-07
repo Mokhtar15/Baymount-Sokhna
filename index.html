@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baymount</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="CSS/nice-select.css">
+    <link rel="stylesheet" href="CSS/slick-theme.css">
+    <link rel="stylesheet" href="CSS/slick.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-4">
+        <div class="container-fluid nav-space">
+            <a href=""><img class="logo" src="Assets/Group 1.png" alt=""></a>
+            <!-- <div class="collapse navbar-collapse"> -->
+                <div class="mx-auto"></div>
+                <div class="menu-btn" type="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div id="menu" class="menu-btn-burger navbar-toggler-icon" ></div>
+                    <p>MENU</p>
+                </div>
+                <div class="close-btn" id="close" type="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="close"></div>
+                    <p>CLOSE</p>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item link active">
+                        <a class="nav-link link-a" href="#HOME">HOME</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link link-a" data-scroll="second-section" href="#ABOUT-BAYMOUNT">ABOUT BAYMOUNT</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link link-a" data-scroll="swiper-section" href="#UNIT-TYPES">UNIT TYPES</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link link-a" data-scroll="third-section" href="#DEVELOP-BY">DEVELOP BY</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link link-a" data-scroll="fourth-section" href="#CONTACT-US">CONTACT US</a>
+                    </li>
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                    </ul> -->
+                </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <!-- section one -->
+
+    <section>
+        <div class="container-fluid section" id="HOME">
+            <div class="justify-content-center align-items-center home-page">
+                <div class="title ">
+                    <div class="intro">
+                        <h1 class="fw-bold fs-1 text-uppercase text-center">A NEW TAKE ON COASTAL LIVING</h1>
+                        <p class="text-start">With dazzling sea views on one side and spectacular mountain landscapes on the other, Baymount is truly unique.<a href="">READ MORE</a></p>
+                    </div>
+                </div>
+                <img class="sea" src="Assets/Asset 6@4x-8.png" alt="">
+                <img class="buliding" src="Assets/Group 51.png" alt="">
+                <div class="fw-bold inquire-form">
+                    <div class="form">
+                        <div id="inquire" class="inquire">
+                            <h2 class="fw-bold text-uppercase">Inquiry Form</h2>
+                            <form class="align-items-center" id="form">
+                                <div class=" input menu-input input-one">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control menu-control" id="floatingInput" placeholder="Fullname">
+                                        <label class="label-menu" for="floatingInput">Fullname</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input menu-input input-two">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control menu-control" id="floatingInput" placeholder="Email">
+                                        <label class="label-menu"for="floatingInput">Email Address</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input menu-input input-three">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control menu-control" id="floatingInput" placeholder="MobileNumber">
+                                        <label class="label-menu" for="floatingInput">Mobile Number</label>
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <select class="wide">
+                                        <option data-display="UNIT TYPE (OPTIONAL)">Penhouse</option>
+                                        <option value="1">Penhouse</option>
+                                        <option value="2">Penhouse</option>
+                                        <option value="3">Penhouse</option>
+                                    </select>
+                                    <label class="label-menu" for="floatingInput"></label>
+                                </div>
+                                <div class="form-floating">
+                                    <select class="wide">
+                                        <option data-display="SELECT YOUR PREFERRED TIME (OPTIONAL)">Penhouse</option>
+                                        <option value="1">Penhouse</option>
+                                        <option value="2">Penhouse</option>
+                                        <option value="3">Penhouse</option>
+                                    </select>
+                                    <label class="label-menu" for="floatingInput"></label>
+                                </div>
+                                <div class="button menu-button">
+                                    <img src="Assets/down-arrow (1).png" alt="">
+                                    <button type="submit" class="btn btn-primary">SEND</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="d-flex home-page-footer justify-content-between">
+                <div class="more-info d-flex align-items-center justify-content-around">
+                    <a href="">INFO@BAYMOUNT.COM</a>
+                    <a href="">HOTLINE 15488</a>
+                </div>
+                <div class="footer-logo">
+                    <img src="Assets/Group 17.png" alt="">
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- section one -->
+
+    <!-- section two -->
+
+    <section>
+        <div class="container-fluid section second-section" id="ABOUT-BAYMOUNT">
+            <div class="d-flex justify-content-between baymount">
+                <div class="about-baymount">
+                    <h1 class="fw-bold fs-1 text-uppercase">ABOUT BAYMOUNT</h1>
+                    <p class="first-overlay">With dazzling sea views on one side and spectacular mountain landscapes on the other, Baymount is truly unique.
+                    Maven Developments has created the Red Sea coast’s most spectacular community, embracing everything that makes Sokhna special. 
+                    Offering residences, hotel and serviced accommodation, facilities and services alongside 9.4 acre beach & 300 m beach frontage. 
+                    </p>
+                    <p class="second-overlay">Baymount is located in the Red Sea area between Ain Sokhna and Zafarana, over 240 meters above sea level at its highest point 
+                    and within easy walking distance of the new International Marina in Galala city. Every one of Baymount’s studios, chalets, lofts, 
+                    twin-houses & villas benefit from breathtaking panoramic sea views, as do the beach front mountain plateau hotel and its comercial hubs. Baymount’s facilities are second to none.</p>
+                </div>
+                <div class="about-img">
+                    <img src="Assets/Capturee.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section two -->
+
+    <!-- section three -->
+        
+    <section>
+        <div class="container-fluid section swiper-section" id="UNIT-TYPES">
+            <div class="path align-items-center"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Assets/5e49352213c62Rectangle-56.png" alt="">
+                        <div class="details">
+                            <div class="title swiper-title" data-swiper-parallax="-300">STANDALONE VILLA</div>
+                            <div class="text swiper-text" data-swiper-parallax="-100">
+                                <p>
+                                    Baymount’s spectacular standalone villas come with 3 or 4 bedrooms. Each has a wide floorspace and a spacious terrace for outdoor dining and entertaining,<a href="">READ MORE</a> 
+                                </p>
+                            </div>
+                            <div class="subtitle swiper-subtitle" data-swiper-parallax="-200"><button class="btn">DOWNLOAD FLOOR PLANS</button><img src="Assets/down-arrow (1)@2x.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/5e49352213c62Rectangle-56.png" alt="">
+                        <div class="details">
+                            <div class="title swiper-title" data-swiper-parallax="-300">STANDALONE VILLA</div>
+                            <div class="text swiper-text" data-swiper-parallax="-100">
+                                <p>
+                                    Baymount’s spectacular standalone villas come with 3 or 4 bedrooms. Each has a wide floorspace and a spacious terrace for outdoor dining and entertaining,<a href="">READ MORE</a> 
+                                </p>
+                            </div>
+                            <div class="subtitle swiper-subtitle" data-swiper-parallax="-200"><button class="btn">DOWNLOAD FLOOR PLANS</button><img src="Assets/down-arrow (1)@2x.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/5e49352213c62Rectangle-56.png" alt="">
+                        <div class="details">
+                            <div class="title swiper-title" data-swiper-parallax="-300">STANDALONE VILLA</div>
+                            <div class="text swiper-text" data-swiper-parallax="-100">
+                                <p>
+                                    Baymount’s spectacular standalone villas come with 3 or 4 bedrooms. Each has a wide floorspace and a spacious terrace for outdoor dining and entertaining,<a href="">READ MORE</a> 
+                                </p>
+                            </div>
+                            <div class="subtitle swiper-subtitle" data-swiper-parallax="-200"><button class="btn">DOWNLOAD FLOOR PLANS</button><img src="Assets/down-arrow (1)@2x.png" alt="">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/5e49352213c62Rectangle-56.png" alt="">
+                        <div class="details">
+                            <div class="title swiper-title" data-swiper-parallax="-300">STANDALONE VILLA</div>
+                            <div class="text swiper-text" data-swiper-parallax="-100">
+                                <p>
+                                    Baymount’s spectacular standalone villas come with 3 or 4 bedrooms. Each has a wide floorspace and a spacious terrace for outdoor dining and entertaining,<a href="">READ MORE</a> 
+                                </p>
+                            </div>
+                            <div class="subtitle swiper-subtitle" data-swiper-parallax="-200"><button class="btn">DOWNLOAD FLOOR PLANS</button><img src="Assets/down-arrow (1)@2x.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/5e49352213c62Rectangle-56.png" alt="">
+                        <div class="details">
+                            <div class="title swiper-title" data-swiper-parallax="-300">STANDALONE VILLA</div>
+                            <div class="text swiper-text" data-swiper-parallax="-100">
+                                <p>
+                                    Baymount’s spectacular standalone villas come with 3 or 4 bedrooms. Each has a wide floorspace and a spacious terrace for outdoor dining and entertaining,<a href="">READ MORE</a> 
+                                </p>
+                            </div>
+                            <div class="subtitle swiper-subtitle" data-swiper-parallax="-200"><button class="btn">DOWNLOAD FLOOR PLANS</button><img src="Assets/down-arrow (1)@2x.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section three -->
+
+    <!-- section four -->
+
+    <section>
+        <div class="container-fluid section third-section" id="DEVELOP-BY">
+            <div class="d-flex justify-content-between maven">
+                <div class="maven-section">
+                    <div class="maven-logo">
+                        <img src="Assets/Group 17.png" alt="">
+                    </div>
+                    <div class="maven-info">
+                        <div class="head-title">
+                            <h3 class="text-uppercase">maven Developments seeks to take the egyptian real estate market in a bold new direction</h3>
+                        </div>
+                        <div class="button read-more">
+                            <button type="submit">READ MORE</button>
+                            <img src="Assets/down-arrow (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sunset">
+                    <img src="Assets/Asset 23@4x-8.png" alt="">
+                </div>
+            </div>
+            <div class="partners">
+                <div class="icons-title">
+                    <h1 class="text-uppercase fw-bold fs-3">because you deserve the best, we partner with the... </h1>
+                </div>
+            </div>
+            <div class="icons">
+                <div>
+                    <img src="Assets/Vodafone_Egypt-Logo.wine.png" alt="">
+                </div>
+                <div class="partners-icon">
+                    <img src="Assets/Assect 1.png" alt="">
+                </div>
+                <div>
+                    <img src="Assets/Borolosy Logo.png" alt="">
+                </div>
+                <div>
+                    <img src="Assets/Asset 1.png" alt="">
+                </div>
+                <div>
+                    <img src="Assets/landscape structures.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section four -->
+
+    <!-- section five -->
+
+    <section>
+        <div class="container-fluid section fourth-section" id="CONTACT-US">
+            <div class="d-flex contact">
+                <div class="contact-info">
+                    <div>
+                        <h3 class="fw-bold text-uppercase">contact info</h3>
+                        <a href="">INFO@BAYMOUNT.COM</a>
+                        <a href="">MAVENDEVELOPMENTS.COM</a>
+                        <a href="">HOTLINE 15488</a>
+                    </div>
+                    <div class="button inquire-btn">
+                        <button>INQUIRE NOW</button>
+                        <img src="Assets/down-arrow (1).png" alt="">
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55579.083354212446!2d32.40073688867186!3d29.466982191334946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145655544563cb0b%3A0x6ad2ba33875f3691!2sBaymount%20Sokhna!5e0!3m2!1sen!2seg!4v1630955129128!5m2!1sen!2seg" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>
+    </section>
+    <footer class="copy-right">
+        <div>
+                <p>Copyright © 2020 BAYMOUNT SOKHNA. ALL RIGHTS RESERVED. Made with nuts BY SOCIAL NUTS</p>
+        </div>
+    </footer>
+    
+    <!-- section five -->
+    
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/jquery.nice-select.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/slick.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
