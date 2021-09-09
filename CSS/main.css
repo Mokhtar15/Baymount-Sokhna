@@ -274,12 +274,15 @@ form-floating > .form-control:focus ~ label,
     height: 100%;
     transition: 0.5s;
   }
+  .menu-active nav .mx-auto {
+    display: none;
+  }
   .menu-active nav .nav-space {
     height: 100%;
   }
   .menu-active nav .navbar-nav {
     display: flex;
-    margin: 0% 28%;
+    margin: 0% auto;
     align-items: center;
   }
   .menu-active nav li {
@@ -403,7 +406,7 @@ form-floating > .form-control:focus ~ label,
   }
   .menu-active nav .navbar-nav {
     display: flex;
-    margin: 0% 39%;
+    margin: 0% auto;
     align-items: center;
   }
   .menu-active nav li {
