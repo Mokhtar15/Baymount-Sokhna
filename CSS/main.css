@@ -42,6 +42,15 @@ li {
   position: absolute;
   border-bottom: 20px solid #b8d1dc85;
   z-index: -1;
+  transition: all 200ms ease-in-out;
+}
+.link-a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav-space {
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .active::before {
   opacity: 1;
@@ -52,6 +61,9 @@ li {
   background: #3d4644;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.iti input::placeholder {
+  color: #3d4644;
 }
 .menu-btn-burger::before {
   content: "";
@@ -212,7 +224,7 @@ form-floating > .form-control:focus ~ label,
   border-color: transparent;
 }
 .home-page-footer {
-  padding: 2% 3%;
+  padding: 2% 5%;
 }
 .more-info {
   margin: auto 0%;
@@ -225,6 +237,39 @@ form-floating > .form-control:focus ~ label,
 .footer-logo img {
   width: 140px;
 }
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+}
+.iti__flag-container::before {
+  content: "";
+  position: absolute;
+  width: 1%;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  background: #3d4644;
+}
+.nice-select:after {
+  height: 10px;
+  width: 10px;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+.form-floating > .form-control {
+  border-radius: 0%;
+}
+.iti input {
+  border-radius: 0%;
+}
+.nice-select.wide {
+  border-radius: 0%;
+}
+.iti {
+  width: 100%;
+}
+.modal-body iframe {
+  padding: 2%;
+}
 
 @media (min-width: 1400px) {
   .intro {
@@ -236,9 +281,14 @@ form-floating > .form-control:focus ~ label,
   }
   .title h1 {
     padding: 0px 21%;
+    font-size: 3rem !important;
   }
   .title p {
-    padding-left: 31%;
+    padding-left: 23%;
+    font-size: 1.2rem;
+  }
+  .title p a {
+    font-size: 1.3rem;
   }
   .form {
     margin-top: 22%;
@@ -248,7 +298,14 @@ form-floating > .form-control:focus ~ label,
     padding-bottom: 4%;
   }
   .home-page-footer {
-    padding: 4% 3%;
+    padding: 4% 5%;
+  }
+  .menu-button {
+    width: 40%;
+  }
+  .menu-button img {
+    bottom: 7.5%;
+    width: 6%;
   }
 }
 @media (max-width: 767.98px) {
@@ -541,6 +598,9 @@ form-floating > .form-control:focus ~ label,
 
 /* section two  */
 
+.baymount {
+  position: relative;
+}
 .about-img {
   padding-right: 5%;
   padding-top: 5%;
@@ -559,6 +619,15 @@ form-floating > .form-control:focus ~ label,
 .about-img img {
   width: 700px;
 }
+.about-img::before {
+  background: #3d4644 0% 0% no-repeat padding-box;
+  opacity: 0.4;
+  content: "";
+  position: absolute;
+  width: 53%;
+  clip-path: polygon(53.5% 0%, 100% 0, 100% 100%, -7% 100%);
+  height: 100%;
+}
 .about-baymount h1 {
   width: 50%;
   color: #007da4;
@@ -572,7 +641,22 @@ form-floating > .form-control:focus ~ label,
 .second-overlay {
   margin-right: -14%;
 }
-
+.video-btn {
+  position: absolute;
+  top: 51%;
+  cursor: pointer;
+  right: 21%;
+}
+.video-btn img {
+  width: 80%;
+}
+.modal.fade .modal-dialog {
+  position: absolute;
+  max-width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 @media (min-width: 1400px) {
   .about-baymount h1 {
     font-size: 3rem !important;
@@ -615,6 +699,21 @@ form-floating > .form-control:focus ~ label,
   .second-overlay {
     margin-right: 0%;
   }
+  .video-btn {
+    top: 18%;
+    right: 25%;
+  }
+  .video-btn img {
+    width: 50%;
+  }
+  .modal.fade .modal-dialog {
+    margin: 0rem;
+  }
+  .modal-body iframe {
+    padding: 0%;
+    width: 300px;
+    height: 250px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   .baymount {
@@ -637,6 +736,10 @@ form-floating > .form-control:focus ~ label,
   .second-overlay {
     margin-right: 0%;
   }
+  .video-btn {
+    top: 30%;
+    right: 35%;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
   .baymount {
@@ -650,6 +753,9 @@ form-floating > .form-control:focus ~ label,
   }
   .about-baymount p {
     margin-right: 0%;
+  }
+  .video-btn {
+    top: 30%;
   }
 }
 /* section two  */
@@ -689,7 +795,7 @@ form-floating > .form-control:focus ~ label,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  top: 14%;
+  top: 18%;
   height: fit-content;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -735,8 +841,17 @@ form-floating > .form-control:focus ~ label,
 .swiper-wrapper .subtitle img {
   width: 3%;
 }
+.path-title {
+  left: 50%;
+  position: absolute;
+  top: 13%;
+  transform: translateX(-50%);
+}
+.payh-title {
+  color: #3d4644;
+}
 .swiper {
-  padding-top: 14%;
+  padding-top: 16%;
   width: 85%;
 }
 .swiper-button-prev,
@@ -768,20 +883,23 @@ form-floating > .form-control:focus ~ label,
     font-size: 1em;
   }
   .path {
-    height: 91%;
+    height: 93%;
   }
   .swiper-text p a {
     font-size: 1.1em;
   }
+  .swiper-wrapper .subtitle .btn {
+    font-size: 1rem;
+  }
   .swiper-wrapper .subtitle {
-    width: 50%;
-    margin-left: 25%;
+    width: 55%;
+    margin-left: 22%;
   }
 }
 @media (max-width: 767.98px) {
   .swiper {
     width: 100%;
-    padding-top: 60%;
+    padding-top: 65%;
   }
   .swiper-title {
     font-size: 1.3rem;
@@ -811,7 +929,7 @@ form-floating > .form-control:focus ~ label,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    top: 15%;
+    top: 19%;
   }
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets
@@ -843,6 +961,9 @@ form-floating > .form-control:focus ~ label,
     right: 5%;
     top: 60%;
   }
+  .path-title {
+    top: 17%;
+  }
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
     left: 5%;
@@ -851,7 +972,7 @@ form-floating > .form-control:focus ~ label,
   .path {
     width: 100%;
     height: 80%;
-    margin: 14% -3%;
+    margin: 14% 0%;
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -870,11 +991,14 @@ form-floating > .form-control:focus ~ label,
     width: 75%;
     margin: 0%;
   }
+  .path-title {
+    top: 5%;
+  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    top: 8%;
+    top: 10%;
   }
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
@@ -938,7 +1062,7 @@ form-floating > .form-control:focus ~ label,
   width: 1%;
   background: #e08650;
   right: 13%;
-  top: 0%;
+  top: -30%;
 }
 .read-more {
   position: relative;
@@ -973,6 +1097,10 @@ form-floating > .form-control:focus ~ label,
   margin-bottom: 0%;
   width: 80%;
   padding-left: 5%;
+}
+.slick-track {
+  display: flex;
+  align-items: center;
 }
 .partners::after {
   content: "";
@@ -1117,6 +1245,14 @@ form-floating > .form-control:focus ~ label,
 .inquire-btn {
   margin-top: 6.8rem;
 }
+.map {
+  padding-right: 5%;
+  padding-left: 2%;
+}
+.contact-baymount {
+  padding-left: 5%;
+  padding-right: 2%;
+}
 .google-map {
   height: 100%;
   width: 100%;
@@ -1152,14 +1288,16 @@ form-floating > .form-control:focus ~ label,
     padding-top: 10rem;
   }
   .contact-info {
-    width: 80%;
     margin-left: auto;
   }
   .google-map {
-    width: 90%;
+    width: 100%;
   }
   .inquire-btn {
     margin-top: 12.8rem;
+  }
+  .contact-info h3 {
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -1181,10 +1319,10 @@ form-floating > .form-control:focus ~ label,
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   .contact-baymount {
-    padding: 0% 3.5rem;
+    padding: 0% 3.5rem !important;
   }
   .map {
-    padding: 0% 3.5rem;
+    padding: 0% 3.5rem !important;
   }
   .google-map {
     height: 40vh;

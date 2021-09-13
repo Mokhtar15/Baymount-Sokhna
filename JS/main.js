@@ -74,6 +74,11 @@ $(document).ready(function(){
     $('select').niceSelect();
 })
 
+$("#telephone").intlTelInput({
+    allowDropdown: true,
+    separateDialCode: true,
+    preferredCountries: ["eg"],
+});
 // section-one
 
 // section-three
@@ -118,14 +123,8 @@ var swiper = new Swiper(".mySwiper", {
 $('.icons').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     });
 
 // section-four
-
-
-
-
-
-

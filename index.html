@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/nice-select.css">
+    <link rel="stylesheet" href="CSS/intlTelInput.min.css">
     <link rel="stylesheet" href="CSS/slick-theme.css">
     <link rel="stylesheet" href="CSS/slick.css">
     <link rel="stylesheet" href="CSS/main.css">
@@ -96,18 +97,15 @@
                                         <label class="label-menu" for="floatingInput">Fullname</label>
                                     </div>
                                 </div>
-                                
                                 <div class="input menu-input input-two">
                                     <div class="form-floating">
                                         <input type="email" class="form-control menu-control" id="floatingInput" placeholder="Email">
                                         <label class="label-menu"for="floatingInput">Email Address</label>
                                     </div>
                                 </div>
-                                
                                 <div class="input menu-input input-three">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control menu-control" id="floatingInput" placeholder="MobileNumber">
-                                        <label class="label-menu" for="floatingInput">Mobile Number</label>
+                                        <input type="tel" class="form-control menu-control" id="telephone" placeholder="Mobile Number">
                                     </div>
                                 </div>
                                 <div class="form-floating">
@@ -169,6 +167,17 @@
                 <div class="about-img">
                     <img src="Assets/Capturee.png" alt="">
                 </div>
+                <div class="video-btn">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="Assets/play-button (2).png" alt="">
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe width="500" height="300" src="https://www.youtube.com/embed/BcHi8jEy16Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,7 +190,10 @@
         <div class="container-fluid section swiper-section" id="UNIT-TYPES">
             <div class="row align-middle">
                 <div class="col-12">
-                            <div class="path align-items-center"></div>
+                    <div class="path align-items-center"></div>
+                    <div class="path-title">
+                        <h1 class="fw-bold text-uppercase">UNIT TYPES</h1>
+                    </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
@@ -313,7 +325,7 @@
     <section>
         <div class="container-fluid section fourth-section" id="CONTACT-US">
             <div class="row contact">
-                <div class="col-lg-4 mt-4 col-12 p-lg-5 contact-baymount">
+                <div class="col-lg-4 mt-4 col-12 contact-baymount">
                     <div class="contact-info">
                         <h3 class="fw-bold text-uppercase p-md-5">contact info</h3>
                         <div class="ps-md-5 d-flex contact-links">
@@ -327,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 mt-4 p-lg-5 col-12 map">
+                <div class="col-lg-8 mt-4 col-12 map">
                     <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55579.083354212446!2d32.40073688867186!3d29.466982191334946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145655544563cb0b%3A0x6ad2ba33875f3691!2sBaymount%20Sokhna!5e0!3m2!1sen!2seg!4v1630955129128!5m2!1sen!2seg" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
                 </div>
             </div>
@@ -347,6 +359,8 @@
     <script src="JS/jquery.js"></script>
     <script src="JS/jquery.nice-select.js"></script>
     <script src="JS/all.min.js"></script>
+    <script src="JS/intlTelInput.min.js"></script>
+    <script src="JS/intlTelInput-jquery.min.js"></script>
     <script src="JS/slick.min.js"></script>
     <script src="JS/main.js"></script>
 </body>
