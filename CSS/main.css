@@ -267,9 +267,6 @@ form-floating > .form-control:focus ~ label,
 .iti {
   width: 100%;
 }
-.modal-body iframe {
-  padding: 2%;
-}
 
 @media (min-width: 1400px) {
   .intro {
@@ -602,44 +599,39 @@ form-floating > .form-control:focus ~ label,
   position: relative;
 }
 .about-img {
+  float: right;
+  width: 55%;
   padding-right: 5%;
   padding-top: 5%;
   padding-bottom: 0%;
-  clip-path: polygon(50% 1%, 100% 0, 100% 100%, 0% 100%);
+  shape-outside: polygon(55% 1%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(53.5% 0%, 100% 0, 100% 100%, 0% 100%);
+  position: relative;
 }
 .about-baymount {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  padding-top: 5%;
-  padding-bottom: 3%;
+  padding-top: 6%;
   padding-left: 5%;
 }
+.about-baymount h1 {
+  width: 30%;
+  margin-bottom: 2rem;
+  color: #007da4;
+}
+.about-baymount p {
+  margin-bottom: 2rem;
+  color: #3d4644;
+}
 .about-img img {
-  width: 700px;
+  width: 100%;
 }
 .about-img::before {
   background: #3d4644 0% 0% no-repeat padding-box;
   opacity: 0.4;
   content: "";
   position: absolute;
-  width: 53%;
-  clip-path: polygon(53.5% 0%, 100% 0, 100% 100%, -7% 100%);
-  height: 100%;
-}
-.about-baymount h1 {
-  width: 50%;
-  color: #007da4;
-}
-.about-baymount p {
-  color: #3d4644;
-}
-.first-overlay {
-  margin-right: -45%;
-}
-.second-overlay {
-  margin-right: -14%;
+  width: 91%;
+  clip-path: polygon(53.5% 0%, 100% 0, 100% 100%, 0% 100%);
+  height: 88.5%;
 }
 .video-btn {
   position: absolute;
@@ -650,47 +642,61 @@ form-floating > .form-control:focus ~ label,
 .video-btn img {
   width: 80%;
 }
+.modal-content {
+  background-color: transparent;
+  border: 0px;
+}
+.modal-body iframe {
+  padding: 2%;
+  width: 700px;
+  height: 500px;
+}
 .modal.fade .modal-dialog {
   position: absolute;
-  max-width: 600px;
+  max-width: 750px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.second-section {
+  position: relative;
+}
 @media (min-width: 1400px) {
   .about-baymount h1 {
     font-size: 3rem !important;
+    width: 25%;
   }
   .about-baymount p {
     font-size: 1.2rem;
   }
   .about-img img {
-    width: 900px;
+    width: 100%;
+  }
+  .about-img::before {
+    height: 100%;
   }
   .about-img {
     padding-top: 0%;
+    shape-outside: polygon(48% 1%, 100% 0, 100% 100%, 0% 100%);
   }
-  .first-overlay {
-    margin-right: -20%;
-  }
-  .second-overlay {
-    margin-right: -10%;
+  .video-btn {
+    position: absolute;
+    top: 37%;
+    cursor: pointer;
+    right: 24%;
   }
 }
 @media (max-width: 767.98px) {
-  .baymount {
-    flex-direction: column-reverse;
+  .about-img {
+    width: 90%;
   }
   .about-baymount h1 {
-    margin-top: -75%;
-    font-size: 1.4rem !important;
-  }
-  .about-img img {
     width: 100%;
+    margin-bottom: 12rem;
   }
   .about-baymount {
     padding-left: 0%;
-    padding-bottom: 0%;
+    padding-top: 2%;
   }
   .first-overlay {
     margin-right: 0%;
@@ -700,8 +706,12 @@ form-floating > .form-control:focus ~ label,
     margin-right: 0%;
   }
   .video-btn {
-    top: 18%;
+    top: 15%;
     right: 25%;
+  }
+  .about-img::before {
+    width: 95%;
+    height: 93%;
   }
   .video-btn img {
     width: 50%;
@@ -737,8 +747,8 @@ form-floating > .form-control:focus ~ label,
     margin-right: 0%;
   }
   .video-btn {
-    top: 30%;
-    right: 35%;
+    top: 16%;
+    right: 20%;
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
